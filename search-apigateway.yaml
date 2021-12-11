@@ -25,3 +25,5 @@ spring:
         uri: lb://search-service
         predicates:
         - Path=/api/**
+        filters:
+        - StripPrefix=1
